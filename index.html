@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CHRONOPOLIS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icon.png">
+    <style>
+      @font-face {
+    font-family: Felix;
+    src: url(felix-titling-mt.ttf)
+  }
+
+body {
+    color: white;
+    font-family: Felix;
+    margin: 0px;
+    
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(formas.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+}
+
+.cidade {
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    text-align: center;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="cidade">CHRONOPOLIS</div>
+        <div id="counter"></div>
+    </div>
+
+    <script type="text/javascript">
+
+// Set the date we're counting down to
+var countDownDate = new Date("May 13, 2020 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 36));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 36)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("counter").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("counter").innerHTML = "CHRONOPOLIS";
+  }
+}, 1000);
+
+
+    </script>
+
+
+</body>
+</html>
