@@ -497,6 +497,27 @@ nav {
   color: #B6B6B6;
 }
 
+
+#live-pic {
+  width: 100%;
+  height: 400px;
+  background-image: url(images/live-1.png);
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 0px 0px 60px 40px #B6B6B6;
+          box-shadow: 0px 0px 60px 40px #B6B6B6;
+  -webkit-animation-name: welcome;
+          animation-name: welcome;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  color: #B6B6B6;
+}
+
+
 .finale-img {
   width: 100%;
   height: auto;
