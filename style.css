@@ -515,8 +515,14 @@ nav {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   color: #B6B6B6;
+  opacity: 1;
+  -webkit-transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
 }
 
+#live-pic:hover {
+  opacity: 0.5;
+}
 
 .finale-img {
   width: 100%;
