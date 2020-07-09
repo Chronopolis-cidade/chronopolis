@@ -424,9 +424,13 @@ nav {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     color: $grey;
+    opacity: 1;
+    transition: opacity 250ms ease-in-out;
 }
 
-
+#live-pic:hover {
+    opacity: 0.5;
+}
 
 //      FINALE
 
